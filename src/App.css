@@ -1,0 +1,45 @@
+/* App.css */
+body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+#movieContainer {
+  width: 500px; /* Film kartının genişliğini artır */
+  position: relative;
+  overflow: hidden;
+  touch-action: pan-y;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+#movieContainer img {
+  width: 100%;
+  max-height: 100%; /* Posterin daha büyük olması için maksimum yüksekliği artır */
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+#movieContainer h2 {
+  text-align: center;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background-color: #1f1f1f;
+  padding: 5px 10px;
+  border-radius: 0 0 10px 10px;
+}
+
+p {
+  text-align: center;
+  color: white;
+}
